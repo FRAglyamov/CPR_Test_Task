@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5391984809740970475
+  m_GuidHigh: 3481491781928474497
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5203695204335547822
+      m_GuidHigh: 8410685057530054587
+    m_SerializedTextureGuid:
+      m_GuidLow: 15565736544318568241
+      m_GuidHigh: 2237834739444274473
+    m_Size: {x: 0.14, y: 0.18666667}
+    m_SpecifySize: 1
+    m_Name: notebook
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5393658154369100797
+      m_GuidHigh: 17777340295010168255
+    m_SerializedTextureGuid:
+      m_GuidLow: 636142952403943887
+      m_GuidHigh: 8624998276399806891
+    m_Size: {x: 0.1, y: 0.056250002}
+    m_SpecifySize: 1
+    m_Name: trees
+    m_Texture: {fileID: 0}
