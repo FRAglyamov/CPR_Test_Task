@@ -46,7 +46,7 @@ public class ImageTracking : MonoBehaviour
         }
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
-            Debug.Log($"Removed tracked image: {trackedImage.referenceImage.name}");
+            //Debug.Log($"Removed tracked image: {trackedImage.referenceImage.name}");
             spawnedPrefabs[trackedImage.referenceImage.name].SetActive(false);
         }
     }
@@ -55,18 +55,18 @@ public class ImageTracking : MonoBehaviour
     {
         if (spawnedPrefabs == null)
         {
-            Debug.LogError("spawnedPrefabs == null");
+            //Debug.LogError("spawnedPrefabs == null");
             return;
         }
 
         string name = trackedImage.referenceImage.name;
 
-        if (trackedImage.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Limited)
+        if (trackedImage.trackingState != UnityEngine.XR.ARSubsystems.TrackingState.Tracking)
         {
             spawnedPrefabs[name].SetActive(false);
             return;
         }
-        Debug.Log($"trackedImage.referenceImage.name: {name}");
+        //Debug.Log($"trackedImage.referenceImage.name: {name}");
         //GameObject prefab = spawnedPrefabs[name];
         //prefab.transform.position = trackedImage.transform.position;
         //prefab.transform.rotation = trackedImage.transform.rotation;

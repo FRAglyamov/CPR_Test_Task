@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 
 public class ShowTips : MonoBehaviour
 {
     [SerializeField] GameObject moveTip;
     [SerializeField] GameObject tapTip;
+    [SerializeField] GameObject manipulationTip;
     [SerializeField] ObjectPlacer objectPlacer;
     [SerializeField] ARPlaneManager planeManager;
     bool isCompleteAllStages = false;
@@ -20,6 +22,7 @@ public class ShowTips : MonoBehaviour
         {
             tapTip.SetActive(false);
             isCompleteAllStages = true;
+            manipulationTip.SetActive(true);
             return;
         }
         // if we have planes
